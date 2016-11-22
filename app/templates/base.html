@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="/static/js/jquery.min.js"></script>
+        <script src="/static/js/jquery-ui/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="/static/js/jquery-ui/jquery-ui.min.css"></link>
+        {% if title %}
+        <title>{{ title }} - Trippy!</title>
+        {% else %}
+        <title>Welcome to the Trippy appp!</title>
+        {% endif %}
+        
+    </head>
+    
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>
+<script>
+    {% block script %}{% endblock %}
+</script>

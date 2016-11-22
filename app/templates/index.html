@@ -1,0 +1,12 @@
+{% extends "base.html"  %}
+{% block body %}
+        <span id="buttonme">Trip</span>
+{% endblock %}
+{% block script %}
+    $(document).ready(function(){
+        $("#buttonme").button().click(function(){
+            location.href = "/trip";
+        });
+
+    });
+{% endblock %}
